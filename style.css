@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Oswald:wght@200..700&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    animation-duration: 0,3ms;
+    background: linear-gradient(to right,#0B192C, #000000);
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: Oswald;
+    color: #ffffff;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: transparent;
+    z-index: 1;
+    border-bottom: 1px solid #083c69; 
+}
+
+nav.sticky {
+    background:#000000;
+    transition: 0,6s;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: aqua;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Itim;
+    
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Oswald';
+    color: #ffffff;
+}
+
+h2 {
+    font-family: 'Oswald';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-biru {
+    background: #6EACDA;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: #666060;
+    text-decoration: none;
+}
+
+a.tbl-merah {
+    background: #194e77;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-merah:hover {
+    background: #717980;
+    text-decoration: none;
+}
+
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    color: #d8d6d6;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.tutor-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-tutor {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-tutor img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.kartu-tutor p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #6c9dc7;
+
+}
+
+.partner-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-partner {
+    width: 20%;
+    margin: 0 auto;
+    font-family: oswald;
+
+}
+
+.kartu-partner img {
+    width: 150px;
+    border-radius: 50%;
+} 
+
+#contact {
+    background: linear-gradient(to right,#0B192C, #000000);
+    padding: 50px 0px 50px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+    font-family: Itim;
+}
+
+h3 {
+    font-family: 'Oswald';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #84c6ff;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+    background: rgb(83, 83, 83);
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+        .logo a {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    
+        nav .menu {
+            width: 100%;
+            margin: 0;
+        }
+    
+        nav .menu ul {
+            text-align: center;
+            margin: auto;
+            line-height: 60px;
+        }
+    
+        nav .menu ul li {
+            display: inline-block;
+            float: none;
+        }
+    
+        section {
+            display: block;
+        }
+    
+        section img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    
+        .kartu-tutor {
+            width: 50%;
+        }
+    
+        .kartu-partner {
+            width: 50%;
+    }
+}
+
+h1 {
+    color: #0a3255;
+    font-size: 2rem;
+    font-weight: 600;
+}
+h1 span {
+    color: yellow;
+    position: relative;
+}
+h1 span::before {
+    content: "";
+    height: 30px;
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    background: #0a9176;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+h1 span.stop-blinking::before {
+    animation: none;
+}
+@keyframes blink {
+    50% { opacity: 0 }
+}
+
+.gambar1 {
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.gambar2 {
+    border-radius: 50%;
+    margin: 30px;
+    padding: 10px;
+}
+
+.judul {
+    color: aquamarine;
+}
+ 
+@keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0 0);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+   .kartu-partner {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+  }
